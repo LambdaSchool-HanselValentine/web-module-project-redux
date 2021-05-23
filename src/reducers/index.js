@@ -1,5 +1,14 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
-import movieReducer from './movieReducer';
+import movieReducer from "./movieReducer";
 
-export default movieReducer;
+// ---importing the favorites reducer:
+import { favoritesReducer } from "./favoritesReducer";
+
+// export default movieReducer;
+
+export default combineReducers({
+	movies: movieReducer,
+	favorites: favoritesReducer,
+	// appTitle: "IMDB Movie Database",
+});

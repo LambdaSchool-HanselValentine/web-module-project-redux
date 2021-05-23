@@ -27,7 +27,7 @@ const MovieList = (props) => {
 						<MovieListItem key={movie.id} movie={movie} />
 					))} */}
 
-					{props.movies.map((movie) => (
+					{props.movies.movies.map((movie) => (
 						<MovieListItem key={movie.id} movie={movie} />
 					))}
 				</tbody>
